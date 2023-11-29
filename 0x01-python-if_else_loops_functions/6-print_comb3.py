@@ -1,4 +1,4 @@
-#!/usr/bin/pythin3
+#!/usr/bin/python3
 count = 0
 for i in range(0, 9):
     for j in range(i + 1, 10):
