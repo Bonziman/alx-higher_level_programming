@@ -8,4 +8,3 @@ def safe_print_integer(value):
             return False
     except (ValueError, TypeError):
         return False
-
