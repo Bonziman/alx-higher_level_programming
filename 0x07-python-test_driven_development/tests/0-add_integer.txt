@@ -1,0 +1,18 @@
+The "0-add_integer" module
+==========================
+Using "add_integer"
+-------------------
+this is a test file in reStructuredText format. first import
+"add_integer" from the "0-add_integer" module:
+	>>> from 0-add_integer import add_integer
+now use it:
+	>>>add_integer(13, 35)
+	48
+	>>>add_integer(5.9, 7.3)
+	12
+	>>>add_integer("b", 7)
+	TypeError: a must be an integer
+	>>>add_integer(2)
+	100
+	>>>add_integer(None)
+	TypeError: a must be an integer	
