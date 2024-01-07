@@ -1,7 +1,13 @@
 #!/usr/bin/python3
 """A mopdel that priduces a function to print a square"""
 
+
 def print_square(size):
+    """ A function that prints a square using #
+    Args:
+        size(int): the size of the square to be printed
+    """
+
     if type(size) is not int:
         raise TypeError("size must be an integer")
     if size < 0:

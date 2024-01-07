@@ -1,0 +1,18 @@
+The "text_indentation" model
+=============================
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation("hello, my name is. Aymane eloirdiwi? and i am: alx student")
+hello, my name is.
+<BLANKLINE>
+Aymane eloirdiwi?
+<BLANKLINE>
+and i am:
+<BLANKLINE>
+alx student
+
+>>> text_indentation(4)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
