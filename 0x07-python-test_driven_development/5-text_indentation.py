@@ -7,12 +7,13 @@ def text_indentation(text):
         if skip_next:
             skip_next = False
             continue
+
         if i == "\\":
             skip_next = True
             continue
 
-        print(i, end="")
-        if i == "." or i == "?" or i == ":":
-            print("")
-            print("")
-            skip_next = True
+    print(i, end="")
+    if i == "." or i == "?" or i == ":":
+        print("")
+        print("")
+        skip_next = True
