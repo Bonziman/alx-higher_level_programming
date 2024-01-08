@@ -7,7 +7,9 @@ def print_square(size):
     Args:
         size(int): the size of the square to be printed
     """
-
+    if not size:
+        raise TypeError("print_square() missing 1 required positional "
+                        "argument: 'size'")
     if type(size) is not int:
         raise TypeError("size must be an integer")
     if size < 0:
