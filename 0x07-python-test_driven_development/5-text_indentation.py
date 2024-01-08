@@ -1,4 +1,4 @@
-#!/usr/bin/puthon3
+#!/usr/bin/python3
 """A model that produces a function to manipulate a text string"""
 
 
