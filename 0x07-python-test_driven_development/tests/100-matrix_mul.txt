@@ -1,0 +1,83 @@
+The "matrix_mul" model
+=======================
+
+>>> matrix_mul = __import__('100-matrix_mul').matrix_mul
+
+-----------------------------------
+Test a valid multiplication scenario:
+>>> matrix_mul([[12, 4, 23], [23, 10, 50], [15, 57, 71]], [[63, 23, 32], [63, 84, 93]])
+[[1008, 612, 756], [2079, 1369, 1666], [4536, 5133, 5781]]
+
+-------------------------------
+Test where m_b is not a list:
+
+>>> matrix_mul(3, [])
+Traceback (most recent call last):
+...
+TypeError: m_a must be a list
+
+-------------------------------
+Test where m_b is not a list:
+
+>>> matrix_mul([[1,2,3]], "school")
+Traceback (most recent call last):
+...
+TypeError: m_b must be a list
+
+------------------------------
+Test where m_a is not a list of lists:
+
+>>> matrix_mul([1,2,3], [[1,2,3,], [1,2,4,]])
+Traceback (most recent call last):
+...
+TypeError: m_a mjust be a list of lists
+
+-------------------------------
+Test where m_b is not a list of lists
+
+>>> matrix_mul([[1,2,3], [1,2,3]], [1,2,3])
+traceback (most recent call last):
+...
+TypeError: m_b must be a list of lists
+
+----------------------------------
+Test where m_a is empty:
+
+>>> matrix_mul([], [[1,2,3], [4, 5, 6], [7, 8, 9]])
+Traceback (most recent call last):
+...
+ValueError: m_a can't be empty
+
+>>> matrix_mul([[]], [[1,2,3], [1,2,3], [4,5,6]])
+Traceback (most recent call last):
+...
+ValueError: m_a can't be empty
+
+-----------------------------------
+Test where m_b is empty:
+
+>>> matrix_mul([[1,2,3], [4,5,6], [7,8,9]], [])
+Traceback (most recent call):
+...
+ValueError: m_b can't be empty
+
+>>> matrix_mul([[1,2,3], [4,5,6], [7,8,9]], [[]])
+Traceback (most recent call):
+...
+ValueError: m_b can't be empty
+
+-----------------------------------
+Test where one element of m_a list of lists is not an integer or float:
+
+>>> matrix_mul([[1,2,3], [4, 5, 'b']], [[1, 2, 3], [4, 5, 6]])
+Traceback (most recent call list):
+...
+TypeError: m_a should contain only integers or floats
+
+-------------------------------------
+test where one element of m-B list of lists is not an integer of float:
+
+>>> matrix_mul([[1, 2, 3], [4, 5, 6]], [[1,2,3], [4, 5, 'b']])
+Traceback (most recent call last):
+...
+TypeError: m_b should only contain integers or floats
