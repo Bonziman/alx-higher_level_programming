@@ -5,9 +5,6 @@
 class BaseGeometry():
     """ An empty class"""
 
-    def __init__(slef, area):
-        self.area = area
-
     def area(self):
         """
             Calculate the area of the geometry.
