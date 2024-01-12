@@ -13,6 +13,7 @@ class Rectangle(BaseGeometry):
             self.width = width
         if self.integer_validator("height", height):
             self.height = height
+
     def area(self):
         """
         Method that calculates the area of a rectangle
