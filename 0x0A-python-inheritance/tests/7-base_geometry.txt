@@ -1,1 +1,10 @@
-#!/usr/bin/python3
+The "7-base_geometry" module
+===========================
+
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", "aymane")
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
