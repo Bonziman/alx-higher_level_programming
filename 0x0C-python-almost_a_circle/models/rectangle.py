@@ -21,12 +21,12 @@ class Rectangle(Base):
         return self.width * self.height
 
     def display(self):
-        """Method to print the rectangle 
+        """Method to print the rectangle
         using the # character
         """
         for i in range(self.height):
-            for n in range(welf.width):
-                print("", end="")
+            for n in range(self.width):
+                print("#", end="")
             print("")
 
     @property
