@@ -26,9 +26,9 @@ class Rectangle(Base):
             value (int): The size value to be set.
         """
         if not isinstance(value, int):
-            raise TypeError("[TypeError] {} must be an integer".format(self))
+            raise TypeError("width must be an integer")
         elif value <= 0:
-            raise ValueError("[ValueError] {} must be > 0".format(self))
+            raise ValueError("width must be > 0")
         else:
             self.__width = value
 
@@ -45,9 +45,9 @@ class Rectangle(Base):
             value(int) the height of the rectangle
         """
         if not isinstance(value, int):
-            raise TypeError("[TypeError] {} must be an integer".format(self))
+            raise TypeError("height must be an integer")
         elif value <= 0:
-            raise ValueError("[ValueError] {} must be > 0".format(self))
+            raise ValueError("height must be > 0")
         else:
             self.__height = value
 
@@ -63,8 +63,10 @@ class Rectangle(Base):
         Args:
             value(int): the x of the rectangle
         """
+        if not isinstance(value, int):
+            raise TypeError("x must be an integer")
         if value < 0:
-            raise ValueError("[ValueError] {} must be >= 0".format(self))
+            raise ValueError("x must be >= 0")
         else:
             self.__x = value
 
@@ -80,7 +82,9 @@ class Rectangle(Base):
         Args:
             value(int): the y of the rectangle
         """
+        if not isinstance(value, int):
+            raise TypeError("y must be an integer")
         if value < 0:
-            raise ValueError("[ValueError] {} must be >= 0".format(self))
+            raise ValueError("y must be >= 0")
         else:
             self.__y = value
