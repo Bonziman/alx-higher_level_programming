@@ -28,7 +28,7 @@ class Rectangle(Base):
         if not isinstance(value, int):
             raise TypeError("[TypeError] {} must be an integer".format(self))
         elif value <= 0:
-            raise ValueError("{} must be > 0".format(self))
+            raise ValueError("[ValueError] {} must be > 0".format(self))
         else:
             self.__width = value
 
@@ -45,9 +45,9 @@ class Rectangle(Base):
             value(int) the height of the rectangle
         """
         if not isinstance(value, int):
-            raise TypeError("{} must be an integer".format(self))
+            raise TypeError("[TypeError] {} must be an integer".format(self))
         elif value <= 0:
-            raise ValueError("{} must be > 0".format(self))
+            raise ValueError("[ValueError] {} must be > 0".format(self))
         else:
             self.__height = value
 
@@ -64,7 +64,7 @@ class Rectangle(Base):
             value(int): the x of the rectangle
         """
         if value < 0:
-            raise ValueError("{} must be >= 0".format(self))
+            raise ValueError("[ValueError] {} must be >= 0".format(self))
         else:
             self.__x = value
 
@@ -81,6 +81,6 @@ class Rectangle(Base):
             value(int): the y of the rectangle
         """
         if value < 0:
-            raise ValueError("{} must be >= 0".format(self))
+            raise ValueError("[ValueError] {} must be >= 0".format(self))
         else:
             self.__y = value
