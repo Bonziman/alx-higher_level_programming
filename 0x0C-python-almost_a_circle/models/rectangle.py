@@ -26,7 +26,7 @@ class Rectangle(Base):
             value (int): The size value to be set.
         """
         if not isinstance(value, int):
-            raise TypeError("{} must be an integer".format(self))
+            raise TypeError("[TypeError] {} must be an integer".format(self))
         elif value <= 0:
             raise ValueError("{} must be > 0".format(self))
         else:
