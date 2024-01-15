@@ -13,6 +13,13 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
+    def area(self):
+        """Method to calculate the area of a rectangle instance
+
+        Returns: the area of the rectangle
+        """
+        return self.width * self.height
+
     @property
     def width(self):
         """retrieve width of a rectangle"""
