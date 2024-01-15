@@ -20,6 +20,15 @@ class Rectangle(Base):
         """
         return self.width * self.height
 
+    def display(self):
+        """Method to print the rectangle 
+        using the # character
+        """
+        for i in range(self.height):
+            for n in range(welf.width):
+                print("", end="")
+            print("")
+
     @property
     def width(self):
         """retrieve width of a rectangle"""
