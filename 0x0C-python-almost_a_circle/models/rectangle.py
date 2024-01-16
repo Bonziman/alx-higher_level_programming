@@ -43,11 +43,10 @@ class Rectangle(Base):
     def update(self, *args):
         """
         Update a rectangle instance attributes,
-        
         Args:
             1st arg: updates the id
-            2nd arg: ipdates the width 
-            3rd arg: updates the height 
+            2nd arg: ipdates the width
+            3rd arg: updates the height
             4th arg: updates the x
             5th arg: ipdates the y
         """
