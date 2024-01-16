@@ -35,7 +35,7 @@ class Rectangle(Base):
 
     def __str__(self):
         """
-        Return string representation of rectangle
+        Return string representation of a rectangle
         """
         return ("[Rectangle] ({}) {}/{} - {}/{}"
                 .format(self.id, self.x, self.y, self.width, self.height))
