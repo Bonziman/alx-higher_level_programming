@@ -11,7 +11,7 @@ class Square(Rectangle):
         """
         initialize a square instance
         """
-        super().__init__(id, x, y, size, size)
+        super().__init__(size, size,x, y, id)
 
     def __str__(self):
         """overide the default str representation
