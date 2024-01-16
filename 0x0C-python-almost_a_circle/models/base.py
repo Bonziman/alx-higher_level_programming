@@ -47,3 +47,12 @@ class Base:
 
         with open(file_name, 'w') as file:
             file.write(json_string)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """Return the list represented by json_string
+        """
+        if json_string is None:
+            return []
+        else:
+            return json.loads(json_string)
