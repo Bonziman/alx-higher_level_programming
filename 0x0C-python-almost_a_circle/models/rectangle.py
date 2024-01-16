@@ -44,6 +44,7 @@ class Rectangle(Base):
         """
         Update a rectangle instance attributes,
         Args:
+            args: the values to update with
             args[0]: updates the id
             args[1]: ipdates the width
             args[2]: updates the height
@@ -58,7 +59,7 @@ class Rectangle(Base):
             self.height = args[2]
         if len(args) >= 4:
             self.x = args[3]
-        if len(arhs) >= 5
+        if len(arhs) >= 5:
             self.y = args[4]
 
     @property
