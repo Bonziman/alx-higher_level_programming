@@ -8,3 +8,4 @@ s.size = 10
 print(s)
 print(s.width)
 print(s.height)
+print(s.to_dictionary())
