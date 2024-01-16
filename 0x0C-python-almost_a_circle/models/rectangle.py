@@ -33,7 +33,7 @@ class Rectangle(Base):
         """
         Return string representation of rectangle
         """
-        return ("[Rectangle] ({}), {}/{} - {}/{}"
+        return ("[Rectangle] ({}) {}/{} - {}/{}"
                 .format(self.id, self.x, self.y, self.width, self.height))
 
     @property
