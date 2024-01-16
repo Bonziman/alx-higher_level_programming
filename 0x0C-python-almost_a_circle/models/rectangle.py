@@ -44,11 +44,11 @@ class Rectangle(Base):
         """
         Update a rectangle instance attributes,
         Args:
-            1st arg: updates the id
-            2nd arg: ipdates the width
-            3rd arg: updates the height
-            4th arg: updates the x
-            5th arg: ipdates the y
+            args[0]: updates the id
+            args[1]: ipdates the width
+            args[2]: updates the height
+            args[3]: updates the x
+            args[4]: ipdates the y
         """
         if len(args) >= 1:
             self.id = args[0]
