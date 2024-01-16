@@ -47,7 +47,6 @@ class Rectangle(Base):
         self.x = args[3]
         self.y = args[4]
 
-
     @property
     def width(self):
         """retrieve width of a rectangle"""
