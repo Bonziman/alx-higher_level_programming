@@ -24,7 +24,11 @@ class Rectangle(Base):
         """Method to print the rectangle
         using the # character
         """
+        for k in range(self.y):
+            print("")
         for i in range(self.height):
+            for j in range(self.x):
+                print(" ", end="")
             for n in range(self.width):
                 print("#", end="")
             print("")
