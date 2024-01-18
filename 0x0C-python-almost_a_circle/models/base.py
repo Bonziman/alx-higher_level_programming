@@ -2,7 +2,6 @@
 """The Base Model"""
 import json
 
-
 class Base:
     """ Base class
     which is a base for other classes
@@ -61,7 +60,7 @@ class Base:
     def create(cls, **dictionary):
         """Create an instance with attributes set provided in dictionary
         """
-        dummy_instance = cls(1)
-        if hasattr(dymmy_instance, 'update'):
-            duummy_instance.update(**dicstionary)
+        dummy_instance = cls(1, 1)
+        if hasattr(dummy_instance, 'update'):
+            dummy_instance.update(**dictionary)
         return dummy_instance
