@@ -2,6 +2,7 @@
 """The Base Model"""
 import json
 
+
 class Base:
     """ Base class
     which is a base for other classes
