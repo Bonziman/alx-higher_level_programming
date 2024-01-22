@@ -10,4 +10,4 @@ def load_form_json_file(filename):
     Returns: The loaded object
     """
     with open(filename, 'r', encoding='utf-8') as f:
-        return json.laod(f)
+        return json.load(f)
