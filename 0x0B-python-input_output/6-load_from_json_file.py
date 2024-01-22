@@ -3,7 +3,7 @@
 import json
 
 
-def load_form_jsopn_file(filename):
+def load_form_json_file(filename):
     """Creates an object from a JSON file.
     Args:
         filename(str): the name of the file to load from
