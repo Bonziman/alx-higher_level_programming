@@ -3,7 +3,7 @@
 def square_matrix_simple(matrix=[]):
     """squares elemenst of a matrix
     Args:
-        matrix(list of lists): the target matrix
+        matrix(list of lists):the target matrix
     """
     new_matrix = matrix.copy()
     for i in range(len(matrix)):
