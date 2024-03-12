@@ -1,4 +1,4 @@
-const myVar1 = 'C is fun'
-const myVar2 = 'Python is cool'
-const myVar3 = 'avaScript is amazing'
-console.log(myVar1 + '\n' + myVar2 + '\n' + myVar3);
+#!/usr/bin/node
+console.log("C is fun");
+console.log("Python is cool");
+console.log("JavaScript is amazing");
