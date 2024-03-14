@@ -21,7 +21,7 @@ def main():
             print("{}, '{}')".format(state[0], state[1]))
 
     except MySQLdb.Error as e:
-        print(f"Error {e.args[0]: {e.args[1]}")
+        print(f"Error {e.args[0]}: {e.args[1]}")
         sys.exit(1)
 
 
