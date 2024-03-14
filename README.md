@@ -1,1 +1,1 @@
-this is a repo for alx higher level languages programming
+python and mysql  is the best
