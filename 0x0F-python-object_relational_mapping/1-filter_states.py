@@ -17,7 +17,7 @@ def main():
         cursor = db.cursor()
 
         cursor.execute("SELECT * FROM states WHERE NAME LIKE \
-                        'N%'ORDER BY id ASC")
+                        BINARY 'N%'ORDER BY id ASC")
 
         states = cursor.fetchall()
         for state in states:
