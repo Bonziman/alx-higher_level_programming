@@ -17,8 +17,8 @@ def main():
                              passwd=MY_PASS, db=MY_DB)
         cursor = db.cursor()
 
-        cursor.execute("SELECT * FROM states WHERE NAME = %s ORDER BY \
-                        id ASC", (name,))
+        cursor.execute("SELECT * FROM states WHERE NAME LIKE BINARY %s \
+                        ORDER BY id ASC", (name,))
 
         states = cursor.fetchall()
         for state in states:
