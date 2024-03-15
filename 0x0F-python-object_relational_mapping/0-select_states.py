@@ -12,7 +12,7 @@ def main():
 
     states = cursor.fetchall()
     for state in states:
-        print("{}, '{}')".format(state[0], state[1]))
+        print("({}, '{}')".format(state[0], state[1]))
     cursor.close()
     db.close()
 
