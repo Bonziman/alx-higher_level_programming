@@ -20,7 +20,7 @@ if __name__ == "__main__":
     session = Session()
 
     update = session.query(State)
-    update = update.filter(State.id==2)
+    update = update.filter(State.id == 2)
     record = update.one()
     record.name = "New Mexico"
     session.commit()
