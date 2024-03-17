@@ -17,7 +17,7 @@ if __name__ == "__main__":
     session = Session()
 
     state = session.query(State).first()
-    try:
+    if state:
         print(state.id, state.name, sep=": ")
-    except NoresultFound :
+    else:
         print("Nothing")
