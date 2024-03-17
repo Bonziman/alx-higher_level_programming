@@ -20,9 +20,8 @@ if __name__ == "__main__":
     session = Session()
 
     search_name = sys.argv[4]
-    search = "%{}%".format(search_name)
     states = session.query(State) \
-                    .filter(State.name.like(search)).all()
+                    .filter(State.name == search_name).all()
     if not states:
         print("Not found")
     for state in states:
