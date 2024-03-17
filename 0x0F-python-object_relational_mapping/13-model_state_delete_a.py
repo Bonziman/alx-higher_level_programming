@@ -19,7 +19,7 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    
+
     stmt = delete(State).where(State.name.like('%a%'))
     session.execute(stmt)
     session.commit()
